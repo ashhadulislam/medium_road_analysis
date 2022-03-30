@@ -49,7 +49,7 @@ def app():
         detect.run(weights=weight_path,name="RoadTestModel", source=image_file)  
         image_file_output="yolov5/runs/detect/RoadTestModel/"+fname
         img = Image.open(image_file_output)
-        st.subheader("Detections")    
+        st.subheader("Road Defect Detections")    
         st.image(img,width=250)            
         
 
